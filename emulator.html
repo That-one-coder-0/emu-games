@@ -11,7 +11,7 @@
 <body>
     <div>
         <select id="game">
-            <option value=""></option>
+            <option value="pokemonRed">Pokemon Red</option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
@@ -24,5 +24,13 @@
         </select>
         <button type="submit">Submit</button>
     </div>
+    <script>
+        function gebid(id) {
+            return document.getElementById(id)
+        }
+        gebid('submit').onclick = function(){
+            console.log(gebid('game').value)
+        }
+    </script>
 </body>
 </html>
