@@ -22,13 +22,13 @@
             <option value=""></option>
             <option value=""></option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="submit()">Submit</button>
     </div>
     <script>
         function gebid(id) {
             return document.getElementById(id)
         }
-        gebid('submit').onclick = function(){
+        function submit(){
             console.log(gebid('game').value)
         }
     </script>
