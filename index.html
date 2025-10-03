@@ -11,16 +11,16 @@
 <body>
     <div>
         <select id="game">
-            <option value="pokemonRed">Pokemon Red</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="1">Pokemon Red</option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
         </select>
         <button type="submit" onclick="submit()">Submit</button>
     </div>
@@ -29,7 +29,7 @@
             return document.getElementById(id)
         }
         function submit(){
-            window.location = `https://that-one-coder-0.github.io/emu-games/${gebid('game').value}`;
+            window.location = `https://that-one-coder-0.github.io/emu-games/submitted.html$${gebid('game').value}`;
         }
     </script>
 </body>
