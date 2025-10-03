@@ -18,16 +18,15 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const core = urlParams.get('core');
-        const gameName = urlParams.get('gameName');
         const gameURL = urlParams.get('gameURL');
     </script>
     <script>
         EJS_player = '#game';
         EJS_core = core;
-        EJS_gameName = gameName;
+        EJS_gameName = 'game';
         EJS_color = '#0064ff';
         EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
-        EJS_gameUrl = gameURL;
+        EJS_gameUrl = `${gameURL}.${core}`;
     </script>
     <script src='https://cdn.emulatorjs.org/stable/data/loader.js'></script>
 </body>
