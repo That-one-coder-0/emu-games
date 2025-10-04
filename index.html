@@ -55,6 +55,9 @@
     <div id="box">
         <select id="game">
             <option value="1">Pokemon Red</option>
+            <option value="2">Golden sun</option>
+            <option value="3">Harvest moon</option>
+            <option value="4">Legend of zelda</option>
         </select>
         <select id="core" onchange="changeCore(this.value)">
             <option value="gba">GBA</option>
@@ -67,6 +70,9 @@
             if(core=='gba'){
             gebid('game').innerHTML=`
             <option value="1">Pokemon Red</option>
+            <option value="2">Golden sun</option>
+            <option value="3">Harvest moon</option>
+            <option value="4">Legend of zelda</option>
                 `
             }
             else if(core=='nds'){
